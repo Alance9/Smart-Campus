@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import './weui-miniprogram/weui-wxss/dist/style/weui.wxss';
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +9,46 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.log_bg{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+}
+.myinput{
+  display: flex;
+  width: 70%;
+  height: 80rpx;
+  padding: 0 0 0 30rpx;
+  margin:  16rpx auto;
+  border: 1px solid #D7D7D7;
+  border-radius: 20rpx;
+  font-size:16px;
+  font-family:Microsoft YaHei;
+}
+
+.myinput .moz{
+  color: #CCCCCC;
+}
+
+.weui-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+}
+
+.login_bt{
+  margin-top: 5vh;
+  border: 1px solid #ccc;
+  border-radius: 20rpx;
+  background-color: #4CA0FD;
+  color: #fff;
+  font-size:16px;
+}
+
+.login_bt::after {
+  border: 0; 
+}

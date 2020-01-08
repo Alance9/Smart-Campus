@@ -1,0 +1,140 @@
+/* pages/person/person.wxss */
+.page{
+  display: block;
+}
+/* 顶部样式 */
+.top{
+  width: 100vw;
+  background: #4CA0FD;
+  height: 25vh;
+}
+.p_base{
+  display: inline-flex;
+  margin-top: 10vh;
+}
+.p_img{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin: 0 4vw;
+}
+.p_content{
+  display: block;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}
+.p_name{
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+.p_id_row{
+  display: inline-flex;
+}
+.p_id{
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+.p_detail_border{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 13rpx;
+  margin-left: 39vw;
+}
+.p_detail{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+
+/* 内容样式 */
+.content{
+  width: 100vw;
+  height: 75vh;
+  background: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b_sel_row{
+  margin: 5vw 0;
+  display: inherit;
+}
+.b_sel_col{
+  display: block;
+}
+
+.sel_row{
+  height: 25vw;
+  width: 25vw;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  margin: 0 4vw;
+  box-shadow: 0rpx 5rpx 5rpx 2rpx rgba(85, 85, 85, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sel_col{
+  display: block;
+  height: 13vw;
+  width: 90vw;
+  background: #FFFFFF;
+  border-radius: 10rpx;
+  box-shadow: 0rpx 5rpx 5rpx 2rpx rgba(85, 85, 85, 0.10);
+  margin-bottom: 5vw;
+}
+
+.sel_row_img{
+  height: 60rpx;
+  width: 60rpx;
+  margin: 40rpx 20rpx 20rpx 20rpx;
+}
+.sel_row_name{
+  font-size: 24rpx;
+  color: #999999;
+}
+.sel_col_row{
+  display: flex;
+}
+.sel_col_img{
+  height: 60rpx;
+  width: 60rpx;
+  margin: 20rpx 0 20rpx 25rpx;
+}
+.sel_col_name{
+  margin: 30rpx 0 20rpx 30rpx;
+  color: gray;
+  font-size: 32rpx;
+  font-weight: 100rpx;
+}
+.sel_col_row_1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sel_col_name_1{
+  margin: 20rpx 0;
+  color: gray;
+  font-size: 32rpx;
+  font-weight: 100rpx;
+}
+
+
+.p_detail_1{
+  width: 18rpx;
+  height: 18rpx;
+  border-top: 2px solid #BFBFBF;
+  border-right: 2px solid #BFBFBF;
+  transform: rotate(45deg);
+  margin-top: 40rpx;
+  margin-left: 50vw;
+}
+/* 点击样式 */
+.p_hover{
+  opacity: 0.9;
+  background: #ebebeb;
+}

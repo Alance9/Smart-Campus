@@ -1,0 +1,4 @@
+<!--pages/class/class.wxml-->
+<view class="page">
+  <image src="../../images/none.png" class="c_img" mode="aspectFit"></image>
+</view>

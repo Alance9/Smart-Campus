@@ -1,0 +1,31 @@
+<view class="page">
+
+  <view class="top">
+  <form bindsubmit="login">
+    <view class="page__bd">
+
+      <!--index.wxml-->
+      <!-- <image mode="widthFix" class="log_bg" src="/images/log_in_bg.png"></image> -->
+      <image src="/images/bg.png" mode="widthFix" class="bg"></image>
+     
+      <view class="userinfo">
+        <!-- <image open-type="getUserInfo"></image> -->
+        <!-- <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+        <open-data type="userNickName" lang="zh_CN" class="userinfo-nickname"></open-data>  -->
+        <!-- <view class="loginview"></view> -->
+        <view class="center loginview"> AI 智慧校园系统</view>
+        <view class="center loginview1"> AI smart campus system</view>
+        <input class="myinput1" name="username" placeholder="请输入账户" placeholder-class="moz" value="{{username}}" />
+
+        <input class="myinput1" name="password" placeholder="请输入密码" type="password" placeholder-class="moz" value="{{password}}" />
+  
+        <button class="login_bt1" type="success" form-type="submit">登 录</button>
+        <view class="center">
+          <view class="weui-footer1">{{motto}}</view>
+        </view>
+        
+      </view>
+    </view>
+  </form>
+  </view>
+</view>

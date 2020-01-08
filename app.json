@@ -1,18 +1,53 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/person/person",
     "pages/index/index",
+    "pages/message/message",
+    "pages/class/class",
+    "pages/checkin/checkin",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "AI智慧校园-人脸录入",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#0F1C44",
+    "navigationBarTitleText": "AI智慧校园",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F3F7F9"
   },
   "networkTimeout": {
     "request": 10000,
     "downloadFile": 10000
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#969696",
+    "selectedColor": "#508CF3",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/checkin/checkin",
+      "text": "考勤分析",
+      "iconPath": "images/person.png",
+      "selectedIconPath": "images/person_1.png"
+    },{
+      "pagePath": "pages/class/class",
+      "text": "课堂分析",
+      "iconPath": "images/person.png",
+      "selectedIconPath": "images/person_1.png"
+    },
+    {
+      "pagePath": "pages/message/message",
+      "text": "我的消息",
+      "iconPath": "images/person.png",
+      "selectedIconPath": "images/person_1.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "个人中心",
+      "iconPath": "images/person.png",
+      "selectedIconPath": "images/person_1.png"
+    }]
+  }
 }

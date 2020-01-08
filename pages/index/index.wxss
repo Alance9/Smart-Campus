@@ -1,21 +1,67 @@
-/**index.wxss**/
+page {
+  height: 80vh;
+  /* background: -webkit-linear-gradient(bottom,white, white, #4CA0FD); */
+  margin: 20rpx;
+  border-radius: 30rpx;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10vh 0;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+
+.i_img {
+  padding: 0;
+  border-radius: 20rpx;
+  width: 100%;
+  height: 100%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/* 图片框 */
+.img_border{
+  margin-top: 10vh;
+  position:relative;
+  height: 600rpx;
+  width: 500rpx;
+  border-radius: 10px;
+  border:1px dashed rgba(197,208,219,1);
 }
-
-.usermotto {
-  margin-top: 200px;
+.img_plus{
+  position:absolute;
+  top:0;
+  bottom: 0;
+  margin: auto 0;
+  width: 100%;
+  text-align: center;
+  font-size:100rpx;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(197,208,219,1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_bt{
+  position:absolute ;
+  bottom:0;
+  font-size:32rpx;
+  font-family:Microsoft YaHei;
+  font-weight:300;
+  color:rgba(255,255,255,1);
+  background:rgba(153,153,153,1);
+  text-align: center;
+  line-height:60rpx;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 500rpx;
+  height: 30px;
+}
+.img_hide{
+  display: none;
+}
+.img_detail{
+  margin: 40rpx;
 }

@@ -1,0 +1,12 @@
+/* pages/class/class.wxss */
+.page{
+  background: #F8F8F8;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.c_img{
+  margin: 30vh 0;
+}

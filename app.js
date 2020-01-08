@@ -1,17 +1,38 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // var logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
+    // // 登录
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //     if (res.statusCode == 200) {
+    //       wx.request({
+    //         url: 'http://192.168.2.200:3000/api/v1/users/login',
+    //         data: {
+    //           statusCode: res.statusCode
+    //         },
+    //         header: {
+    //           "Content-Type": "application/x-www-form-urlencoded"
+    //         },
+    //         method: 'post',
+    //         success(res) {
+    //           //1.存用户信息到本地存储
+    //           wx.setStorageSync('token', res.data.token)
+    //           //2.存用户信息到全局变量
+    //           var app = getApp();
+    //           app.globalData.token = res.data.token
+    //           console.log(app.globalData.token)
+    //         }
+    //       })
+    //     }
+    //   }
+    // })
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -34,6 +55,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    token: null,
+    username: null,
+    password: null
   }
 })

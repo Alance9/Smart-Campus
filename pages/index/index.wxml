@@ -1,13 +1,31 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="page">
+
+  <form bindsubmit="formSubmit">
+    
+  
+    <view class="userinfo">
+      <!-- <view class="section">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+          <view class="picker">
+            身份：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+          </view>
+        </picker>
+      </view> -->
+      <!-- <input class="myinput" placeholder="请输入学号/工号" placeholder-class="moz" name="id_input"></input> -->
+      <!-- <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 300px;"  hidden='{{showCamera}}'></camera> -->
+      <view class="img_border" bindtap="photoSelect">
+        <view class="{{flag?'img_plus':'img_hide'}}">+</view>
+        <view class="img_bt">点击上传</view>
+        <image mode="aspectFit" src="{{imagesrc}}" class="i_img"></image>
+      </view>  
+      <!-- <view>学号：{{id}}</view> 
+      <view>姓名：{{name}}</view>  -->
+      
+      <!-- <text class="img_detail">图片的大小：{{imgwidth}}px*{{imgheight}}px</text>  -->
+      <button class="login_bt" form-type="submit">确认上传</button>
+    </view>
+  </form>
+
+  <!-- <view class="weui-footer">{{motto}}</view> -->
+  <!-- <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar> -->
 </view>
